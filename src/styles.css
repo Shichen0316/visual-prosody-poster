@@ -1,0 +1,606 @@
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #f5f5f5;
+  background: #080808;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  overflow: hidden;
+  background: #080808;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Main scrolling container */
+
+.poster {
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+}
+
+/* Full-screen poster sections */
+
+.poster-section {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: clamp(2rem, 6vw, 7rem);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.section-content {
+  width: min(1500px, 100%);
+}
+
+/* Shared typography */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+h2 {
+  max-width: 1150px;
+  margin-bottom: 3rem;
+  font-size: clamp(2.4rem, 5.5vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.15;
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.65;
+
+  text-align: left;
+}
+
+.large-copy {
+  max-width: 950px;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  line-height: 1.35;
+}
+
+/* Hero */
+
+.hero-section {
+  position: relative;
+
+  text-align: left;
+
+  background-image: url("/images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.hero-section::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+
+}
+
+.hero-section .section-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-subtitle {
+  max-width: 900px;
+
+  margin: 0 0 2rem 0;
+
+  font-size: clamp(1.1rem, 2vw, 2rem);
+
+  line-height: 1.35;
+
+  opacity: 0.82;
+
+  text-align: left;
+}
+
+.authors {
+  margin-bottom: 0;
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  opacity: 0.6;
+}
+
+/* Problem section */
+.section-title {
+
+  max-width: 1000px;
+
+  margin-bottom: 2rem;
+
+  font-size: clamp(2rem, 3vw, 3.5rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.03em;
+
+  text-align: left;
+
+}
+
+.problem-section {
+
+  text-align: left;
+
+}
+
+.problem-section .section-content {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+}
+
+.problem-title {
+
+  max-width: 1050px;
+
+  margin-bottom: 2rem;
+
+  font-size: clamp(2rem, 4vw, 4.5rem);
+
+  line-height: 1.08;
+
+  letter-spacing: -0.035em;
+
+  text-align: left;
+
+}
+
+.problem-copy {
+  max-width: 850px;
+}
+
+.problem-copy p {
+  margin-bottom: 0.8rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+  opacity: 0.82;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.problem-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Idea section */
+
+.idea-section {
+  text-align: left;
+}
+
+.idea-section .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.idea-section .eyebrow {
+  align-self: flex-start;
+  width: 100%;
+  text-align: left;
+}
+
+.idea-title {
+  max-width: 1050px;
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.idea-copy {
+  max-width: 850px;
+}
+
+.idea-copy p {
+  margin-bottom: 0.8rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  opacity: 0.82;
+}
+
+.idea-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.idea-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+    width: 100%;
+}
+
+.idea-image img {
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+/* Plain text versus visual prosody */
+
+.comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.comparison article {
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 5rem);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.comparison-label {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.plain-message,
+.expressive-message {
+  margin-bottom: 0;
+  font-size: clamp(2rem, 4.5vw, 5rem);
+  line-height: 1.15;
+}
+
+.plain-message {
+  font-weight: 400;
+}
+
+.expressive-message {
+  font-weight: 760;
+  letter-spacing: -0.04em;
+}
+
+/* Design-space */
+
+.design-section {
+
+  text-align: left;
+
+}
+
+.design-section .section-content {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+}
+
+.design-section .eyebrow {
+
+  align-self: flex-start;
+
+  width: 100%;
+
+  text-align: left;
+
+}
+
+.design-title {
+
+  max-width: 1050px;
+
+  margin-bottom: 0.75rem;
+
+  font-size: clamp(2rem, 3vw, 3.5rem);
+
+  line-height: 1.12;
+
+  letter-spacing: -0.03em;
+
+  text-align: left;
+
+}
+
+.design-copy {
+
+  max-width: 1100px;
+
+  margin-bottom: 2rem;
+
+}
+
+.design-copy p {
+
+  margin-top: 0;
+
+  margin-bottom: 0;
+
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+
+  line-height: 1.6;
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+  hyphens: auto;
+
+  opacity: 0.82;
+
+}
+
+.design-figure {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: left;
+
+  margin-top: 1rem;
+
+}
+
+.design-figure img {
+
+  width: min(1100px, 100%);
+
+  height: auto;
+
+  display: block;
+
+  border-radius: 16px;
+
+}
+
+/* Relay */
+
+relay-section {
+
+  text-align: left;
+
+}
+
+.relay-section .section-content {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+}
+
+.relay-section .eyebrow {
+
+  align-self: flex-start;
+
+  width: 100%;
+
+  text-align: left;
+
+}
+
+.relay-title {
+
+  max-width: 1050px;
+
+  margin-bottom: 0.75rem;
+
+  font-size: clamp(2rem, 3vw, 3.5rem);
+
+  line-height: 1.12;
+
+  letter-spacing: -0.03em;
+
+  text-align: left;
+
+}
+
+.relay-copy {
+
+  max-width: 1100px;
+
+  margin-bottom: 2rem;
+
+}
+
+.relay-copy p {
+
+  margin: 0;
+
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+
+  line-height: 1.6;
+
+  text-align: justify;
+
+  text-justify: inter-word;
+
+  hyphens: auto;
+
+  opacity: 0.82;
+
+}
+
+.relay-demo {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 1rem;
+
+}
+
+/* Scrollbar */
+
+.poster {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
+}
+
+.poster::-webkit-scrollbar {
+  width: 10px;
+}
+
+.poster::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.poster::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  background-clip: padding-box;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 800px) {
+  body {
+    overflow: auto;
+  }
+
+  .poster {
+    height: auto;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .poster-section {
+    min-height: auto;
+    padding: 5rem 1.5rem;
+  }
+
+  .problem-grid,
+  .comparison,
+  .mapping-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mapping-arrow {
+    transform: rotate(90deg);
+    text-align: center;
+  }
+
+  .comparison article {
+    min-height: 340px;
+  }
+
+  .relay-placeholder {
+    min-height: 360px;
+  }
+}
+
+/* Reduced-motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  .poster {
+    scroll-behavior: auto;
+  }
+
+  .poster {
+    scroll-snap-type: none;
+  }
+}
