@@ -532,6 +532,17 @@ relay-section {
 
 }
 
+.relay-frame {
+  width: 100%;
+  height: 900px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: black;
+}
+
 /* Scrollbar */
 
 .poster {

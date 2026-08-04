@@ -150,7 +150,11 @@ function App() {
         </div>
 
         <div className="relay-demo">
-          <p>Relay prototype will be embedded here.</p>
+         <iframe
+          src="https://krisluyten.net/visual-prosody-01082026/relay/"
+          title="Earth-Mars Relay Prototype"
+          className="relay-frame"
+         />
         </div>
       </Section>
     </main>
