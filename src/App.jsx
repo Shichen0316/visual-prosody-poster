@@ -151,15 +151,14 @@ function App() {
         <p className="eyebrow">In context</p>
 
         <h2 className="relay-title">
-          Experience visual prosody in an Earth-Mars messaging scenario
+          Experience Visual Prosody in Earth-Mars Messaging Scenario
         </h2>
 
         <div className="relay-copy">
         <p>
-          This prototype illustrates how visual prosody could be incorporated into
-          future interplanetary messaging systems. Rather than replacing text, it
-          augments text with expressive typographic cues while preserving the
-          advantages of asynchronous communication.
+          This interactive prototype demonstrates one possible application of visual prosody in 
+          a future Earth-Mars messaging system. Try sending and receiving messages to explore how expressive 
+          typography may communicate emotional nuance while preserving the advantages of text-based communication.
         </p>
         </div>
 
@@ -181,7 +180,7 @@ function App() {
        </div>
       
         <div className="footer-contact">
-        <p>Contact: shichen.zhang@uhasselt.be</p>
+        <p>SpaceCHI 2026 | Contact: shichen.zhang@uhasselt.be</p>
         </div>
       </div>
       </footer>

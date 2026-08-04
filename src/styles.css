@@ -445,7 +445,7 @@ relay-section {
 }
 
 .relay-title {
-  max-width: 1050px;
+  max-width: 1150px;
   margin-bottom: 0.75rem;
   font-size: clamp(2rem, 3vw, 3.5rem);
   line-height: 1.12;
