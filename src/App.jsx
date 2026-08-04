@@ -12,29 +12,29 @@ function App() {
   return (
     <main className="poster">
       <Section id="hero" className="hero-section">
-        <p className="eyebrow">SpaceCHI 2026</p>
+        <p className="eyebrow">SpaceCHI 2026 - Poster</p>
 
         <h1>
           Visual Prosody:
         </h1>
 
         <p className="hero-subtitle">
-          A legibility-preserving approach for emotionally expressive text in
-          interplanetary communication
+          A Legibility-Preserving Approach for Emotionally Expressive Text in Interplanetary Communication
         </p>
 
         <p className="authors">
-          Shichen Zhang, Ann Bessemans
+          Shichen Zhang, Ann Bessemans, Kris Luyten
         </p>
       </Section>
 
-      <Section id="problem">
+      <Section id="problem" className="problem-section">
         <p className="eyebrow">Problem space</p>
 
         <h2 className="section-title">
           Text Has Advantages in Delayed Space Communication But Strips Away Emotional Information
         </h2>
 
+        <div className="problem-layout">
         <div className="problem-copy">
           <p>
             As humanity moves toward sustained interplanetary presence, 
@@ -58,10 +58,18 @@ function App() {
             preserves the benefits of text under interplanetary conditions.
           </p>
         </div>
+
+        <figure className="problem-figure">
+          <img
+            src="/images/earth-mars-delay.png"
+            alt="Earth and Mars communication delay"
+          />
+        </figure>
+        </div>
       </Section>
 
       <Section id="idea" className="idea-section">
-        <p className="eyebrow">The idea</p>
+        <p className="eyebrow">Proposed Solution</p>
 
         <h2 className="idea-title">
           Visually Enrich Prosodic Infromation: Use Type to Suggest How a Message Sounds
@@ -87,7 +95,8 @@ function App() {
         </div>
       </Section>
 
-      <Section id="example">
+      {/*
+      <Section id="example" className="example-section">
         <p className="eyebrow">See the difference</p>
 
         <div className="comparison">
@@ -106,6 +115,7 @@ function App() {
           </article>
         </div>
       </Section>
+      */}
 
       <Section id="design-space" className="design-section">
         <p className="eyebrow">Design space</p>
@@ -137,7 +147,7 @@ function App() {
         <p className="eyebrow">In context</p>
 
         <h2 className="relay-title">
-          Experience visual prosody in an Earth–Mars messaging scenario.
+          Experience visual prosody in an Earth-Mars messaging scenario
         </h2>
 
         <div className="relay-copy">
@@ -157,6 +167,20 @@ function App() {
          />
         </div>
       </Section>
+
+      <footer className="footer">
+      <div className="footer-content">
+       <div className="footer-logos">
+       <img src="/images/uhasselt-logo.png" alt="UHasselt" />
+       <img src="/images/digital-future-lab-logo.jpg" alt="Digital Future Lab" />
+       <img src="/images/readsearch-logo.png" alt="READSEARCH" />
+       </div>
+      
+        <div className="footer-contact">
+        <p>Contact: shichen.zhang@uhasselt.be</p>
+        </div>
+      </div>
+      </footer>
     </main>
   );
 }
