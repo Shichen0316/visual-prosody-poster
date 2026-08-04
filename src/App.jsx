@@ -23,7 +23,7 @@ function App() {
         </p>
 
         <p className="authors">
-          Shichen Zhang, Ann Bessemans, Kris Luyten
+          Shichen Zhang, Ann Bessemans, Kris Luyten | UHasselt
         </p>
       </Section>
 
@@ -78,11 +78,16 @@ function App() {
         <div className="idea-layout">
           <div className="idea-copy">
           <p>
-          Visual prosody uses visible changes in text to suggest parts of spoken delivery. 
-          In this prototype, heavier text suggests a louder voice, raised text a higher voice, wider text a slower voice, 
-          and extra space a pause. Earlier visual-prosody work explored these links in reading materials.[3][16] 
-          The cues are suggestions, not a universal language. Readers need a clear key, the original words must remain easy to read, 
-          and the idea still needs testing in a communication setting. These prototypes are research tools for that testing.
+          Visual prosody refers to visual cues embedded in text that convey prosodic and emotional information, 
+          such as emphasis, intonation, and tone, through typographic variation [5, 16, 21]. 
+          By representing how something is said rather than only what is said, visual prosody makes text more expressive and closer to spoken 
+          communication [16, 17].
+          </p>
+
+          <p>
+          This project investigates how speech prosodic and emotional cues can be automatically extracted from speech and represented through 
+          dynamic typographic morphing using an arousal-valence model and variable fonts. The goal is to develop and empirically validate an 
+          interactive, emotionally expressive text communication system while preserving text legibility.
           </p>
           </div>
 
@@ -121,17 +126,16 @@ function App() {
         <p className="eyebrow">Design space</p>
 
         <h2 className="design-title">
-          Add expression without hiding the message.
+          Systematic Mapping Between Prosody and Typography: Atomizing Speech and Type into a Shared Design Space
         </h2>
 
         <div className="design-copy">
         <p>
-          Visual prosody builds upon the multidimensional framework proposed by
-          Bessemans et al., mapping prosodic and emotional characteristics of speech
-          to typographic variables while preserving readability. The framework
-          establishes a design space that links emotional dimensions and speech
-          attributes with font dimensions, providing a systematic foundation for
-          expressive typography.
+          We propose an intermediate layer of design atoms that bridges speech and typography.
+          Prosodic atoms capture perceptually relevant aspects of spoken expression, 
+          while font atoms describe independent dimensions of typography. Visual prosody is then created 
+          by systematically relating these two sets of atoms, providing a flexible and extensible framework 
+          for expressive text design.
         </p>
         </div>
 
