@@ -94,6 +94,11 @@ p {
   margin-top: 0;
 }
 
+h1,
+h2 {
+  color: #ffffff;
+}
+
 h1 {
   margin-bottom: 1.5rem;
     font-size: clamp(3rem, 7vw, 6rem);
@@ -483,6 +488,48 @@ relay-section {
   background: black;
 }
 
+/* Reference section */
+
+.references-section {
+  min-height: auto;
+}
+
+.references-title {
+  margin-bottom: 2.5rem;
+}
+
+.references-list {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.reference-item {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.reference-number {
+  font-weight: 600;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.reference-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.reference-item a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 /* Footer */
 
 .footer {
@@ -570,6 +617,11 @@ relay-section {
     height: auto;
     overflow: visible;
     scroll-snap-type: none;
+
+    background-attachment: scroll;
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: top center;
   }
 
   .poster-section {
@@ -577,7 +629,8 @@ relay-section {
     padding: 5rem 1.5rem;
   }
 
-  .problem-grid,
+  .problem-layout,
+  .idea-layout,
   .comparison,
   .mapping-grid {
     grid-template-columns: 1fr;
