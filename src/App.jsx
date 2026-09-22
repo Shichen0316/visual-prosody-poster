@@ -257,8 +257,8 @@ function App() {
       <footer className="footer">
       <div className="footer-content">
        <div className="footer-logos">
-       <img src="/images/New Uhasselt + PXL Logo.png" alt="UHasselt" />
-       <img src="/images/KU Leuven + LUCA Logo.png" alt="KU Leuven + LUCA" />
+       <img src="/images/New Uhasselt_PXL Logo.png" alt="UHasselt" />
+       <img src="/images/KU Leuven_LUCA Logo.png" alt="KU Leuven + LUCA" />
        <img src="/images/New READSEARCH Logo.png" alt="READSEARCH" />
        </div>
       
