@@ -133,7 +133,7 @@ function App() {
         <p className="eyebrow">Proposed Solution</p>
 
         <h2 className="idea-title">
-          Visually Enrich Prosodic Infromation: Use Type to Suggest How a Message Sounds
+          Visually Enrich Prosodic Information: Use Type to Suggest How a Message Sounds
         </h2>
 
         <div className="idea-layout">
